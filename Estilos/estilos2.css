@@ -1,0 +1,7 @@
+.contenedor{
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    background: linear-gradient(to right, #005C98, #505BDA);
+}
+

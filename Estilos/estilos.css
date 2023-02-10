@@ -1,0 +1,480 @@
+/* Generales */
+*{
+    padding: 0;
+    margin: 0 auto;
+    top: 0;
+    font-family: sans-serif;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    --azul: #505EF4;
+    --verde: #116809;
+    --violet: #8b0685;
+}
+
+html,
+body{
+    min-width: 100vw;
+    width: 100%;
+
+}
+
+body{
+    min-height: 100vh;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedorPrincipal{
+    width: 100%;
+    height: 100%;
+}
+
+/*Inicio de la Sección de Cabecera de la página*/
+header{
+    position: fixed;
+    z-index: 1000;
+    background: none;
+    height: 80px;
+    width: 100%;
+    transition: all ease-in .6s;
+}
+
+.hlogo{
+    position: absolute;
+    padding: 20px 50px;
+}
+
+.logo{
+    height: 80px;
+    width: 80px;
+    transition: .9s;
+}
+
+nav{
+    height: 100%;
+}
+
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul li a{
+    font-size: 18px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    transition: .8s;
+}
+
+li a.active, li a:hover{
+    background: var(--azul);
+    transition: .5s;
+    color: #fff;
+}
+
+.checkbtn{
+    font-size: 30px;
+    /*color: #fff;*/
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check{
+    display: none;
+}
+
+header.abajo{
+    background: #fff;
+    transition: all ease-in-out .7s;
+    height: 60px;
+    box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.6);
+}
+
+header.abajo .hlogo{
+    height: 100%;
+    padding: 0;
+}
+
+header.abajo .logo{
+    width: 60px;
+    height: 60px;
+    margin-left: 30px;
+}
+
+header.abajo ul{
+    height: 100%;
+}
+
+header.abajo ul li{
+    height: 100%;
+    line-height: 60px;
+}
+
+header.abajo .hmenu ul li a{
+    font-size: 12px;
+}
+
+/*Fin de la Sección de Cabecera de la página*/
+
+
+
+
+/*Inicio de la Sección Servicios*/
+.servicios{
+    position: relative;
+    width: 100%;
+    height: 1700px;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.servicios div{
+    width: 100%;
+    height: 400px;
+    border-radius: 20px;
+    text-align: center;
+}
+.servicios img{
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+}
+
+
+.servicios button{
+    margin-top: 10px;
+    width: 100px;
+    height: 50px;
+    border: 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    background-color: var(--azul);
+    color: #fff;
+}
+
+.servicios button:hover{
+    background: linear-gradient(var(--azul), darkblue);
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+}
+
+    /*Inicio de sección Cotizar*/
+.cotizar{
+    display: flex;
+}
+
+.cotizar-info{
+    padding: 60px;
+}
+
+.tit-servicios{
+    color: var(--violet);
+    font-size: 30px;
+    transform: translateY(100px);
+    visibility: hidden;
+    transition: 0.9s;
+}
+
+
+.cotizar h3.slider_cotizar{
+    transform: translateY(0);
+    visibility: visible;
+    transition: 0.9s;
+}
+
+.cotizar-info p{
+    margin-top: 20px;
+    transform: translateX(300px);
+    transition: 0.10s;
+    visibility: hidden;
+}
+
+.cotizar-info p.slider_p{
+    transform: translateX(0);
+    transition: 0.9s;
+    visibility: visible;
+}
+
+.cotizar-info button{
+    transform: translateX(-300px);
+    transition: 0.10s;
+    visibility: hidden;
+}
+
+.cotizar-info button.slider_btn{
+    transform: translateX(0);
+    transition: 0.9s;
+    visibility: visible;
+}
+
+.cotizar-img2{
+    transform: translate(-10px, 55px);
+}
+    /*Fin de sección Cotizar*/
+
+    /*Inicio de sección Inflables*/
+.inflables{
+    display: flex;
+    margin-top: 40px;
+}
+
+.inflables img{
+    margin-right: 20px;
+}
+
+.inflable_img1{
+    transform: translate(-10px, 55px);
+}
+
+.inflables_info{
+    padding-right: 200px;
+}
+
+.inflables h3.slider_inflable{
+    transform: translateY(0);
+    visibility: visible;
+    transition: 0.9s;
+}
+
+.inflables p{
+    margin-top: 20px;
+    transform: translateX(-300px);
+    transition: 0.10s;
+    visibility: hidden;
+}
+
+.inflables_info p.slider_p_inflable{
+    transform: translateX(0);
+    transition: 0.9s;
+    visibility: visible;
+}
+
+.inflables_info button{
+    transform: translateX(300px);
+    transition: 0.10s;
+    visibility: hidden;
+}
+
+.inflables_info button.slider_btn_inflable{
+    transform: translateX(0);
+    transition: 0.9s;
+    visibility: visible;
+}
+
+
+    /*Fin de sección Cotizar*/
+
+    /*Inicio de sección Snack*/
+.snack{
+    display: flex;
+}
+
+.snack_img1{
+    margin-left: 20px;
+    transform: translate(-10px,100px);
+}
+
+.snack_info{
+    margin-left: 20px;
+    padding: 10px;
+}
+
+.snack_info h3.slider_snack{
+    transform: translateY(0);
+    visibility: visible;
+    transition: 0.9s;
+}
+
+.snack_info p{
+    margin-top: 20px;
+    transform: translateX(300px);
+    transition: 0.10s;
+    visibility: hidden;
+}
+
+.snack_info p.slider_p_snack{
+    transform: translateX(0);
+    transition: 0.9s;
+    visibility: visible;
+}
+
+.snack_info button{
+    transform: translateX(-300px);
+    transition: 0.10s;
+    visibility: hidden;
+}
+
+.snack_info button.slider_btn_snack{
+    transform: translateX(0);
+    transition: 0.9s;
+    visibility: visible;
+}
+
+    /*Fin de sección Snack*/
+
+    /*Inicio de sección Decoraciones*/
+.decoraciones{
+    display: flex;
+}
+
+.decoraciones img{
+    margin-right: 20px;
+}
+
+.decor_img1{
+    transform: translate(40px, 55px);
+}
+
+.decoraciones_info{
+    padding: 20px;
+}
+
+
+.decoraciones_info h3.slider_decor{
+    transform: translateY(0);
+    visibility: visible;
+    transition: 0.9s;
+}
+
+.decoraciones_info p{
+    margin-top: 20px;
+    transform: translateX(-300px);
+    transition: 0.10s;
+    visibility: hidden;
+}
+
+.decoraciones_info p.slider_p_decor{
+    transform: translateX(0);
+    transition: 0.9s;
+    visibility: visible;
+}
+
+.decoraciones_info button{
+    transform: translateX(300px);
+    transition: 0.10s;
+    visibility: hidden;
+}
+
+.decoraciones_info button.slider_btn_decor{
+    transform: translateX(0);
+    transition: 0.9s;
+    visibility: visible;
+}
+
+    /*Fin de sección Decoraciones*/
+
+/*Fin de la Sección Servicios*/
+
+/*Inicio de la Sección de Nosotros*/
+.nosotros{
+    width: 100%;
+    height: 1000;
+    margin-top: 30px;
+}
+
+.nosotros_info{
+    padding: 20px;
+    margin-left: 20px;
+}
+
+.nosotros_img{
+    padding-left: 15px;
+    width: 700px;
+    border-radius: 50px 0 50px 0;
+    margin-left: 300px;
+    box-shadow: .8em .8em 2em var(--violet);
+    margin-bottom: 30px;
+}
+
+.imagenes_efecto img{
+    width: 150px;
+    border-radius: 50px;
+    border-right: 10px solid var(--violet);
+}
+
+.img_efect_1{
+    transform: translate(1080px, -800px);
+}
+
+.img_efect_2{
+    transform: translate(900px, -450px);
+}
+
+.img_efect_3{
+    transform: translate(0, 0);
+}
+
+.img_efect_4{
+    transform: translate(500px, -100px);
+}
+
+.nosotros_info h3{
+    margin-bottom: 30px;
+    color: var(--violet);
+    font-size: 40px;
+}
+/*Fin de la Sección de Nosotros*/
+
+/*Inicio de Pie de Página*/
+footer{
+    width: 100%;
+    height: 150px;
+    margin-top: 20px;
+    background-color: #8b0685;
+    display: flex;
+    color: #fff;
+}
+
+footer img{
+    width: 40px;
+}
+
+footer section{
+    margin-top: 20px;
+    text-align: center;
+}
+
+footer section h3{
+    margin-bottom: 20px;
+}
+
+.redes p{
+    margin-top: 10px;
+}
+
+.accesos a{
+    display: flex;
+    color: #fff;
+    margin-bottom: 5px;
+}
+
+.accesos a:hover{
+    text-decoration: underline;
+}
+
+
+.politicas a{
+    display: flex;
+    color: #fff;
+    margin-bottom: 5px;
+}
+
+.politicas a:hover{
+    text-decoration: underline;
+}
+/*Fin de Pie de Página*/
+

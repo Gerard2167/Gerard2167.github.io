@@ -1,0 +1,9 @@
+.contendor_principal{
+    height: 1800px;
+}
+
+h1{
+    text-align: center;
+    margin-top: 150px;
+    color: var(--violet);
+}

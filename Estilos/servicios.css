@@ -1,0 +1,149 @@
+/*GENERALES*/
+*{
+    --azul: #505EF4;
+    --verde: #116809;
+}
+
+/*Inicio de Sección del banner*/
+
+.contenedor_banner{
+    position: relative;
+    width: 100%;
+    height: 400px;
+}
+
+.contenedor_banner img{
+    width: 100%;
+    height: 200px;
+    margin-top: 85px;
+}
+
+.contenedor_banner h1{
+    position: absolute;
+    left: 500px;
+    top: 65%;
+    color: var(--violet);
+    font-size: 80px;
+    text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.8);
+    filter: drop-shadow(0.03em 0.03em 0.01em #000);
+}
+
+/*Fin de Sección del banner*/
+
+/*Inicio de la sección de los servicios*/
+.contendor_principal{
+    height: 1800px;
+    position: relative;
+}
+
+.contenedor_inflables{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    border-top: 2px solid #a5a4a4;
+    height: 1300px;
+    padding: 50px 30px 30px 30px;
+}
+
+.contenedor_inflables h2{
+    position: absolute;
+    left: 45%;
+    top: 375px;
+    text-align: center;
+    font-size: 20px;
+    color: #fff;
+    border-color: #a5a4a4;
+    background-color: var(--azul);
+    border-radius: 20px;
+    padding: 10px;
+    width: 200px;
+    height: 50px;
+}
+
+.tarjeta_servicio{
+    text-align: center;
+    margin-right: 20px;
+    padding: 10px;
+    border-bottom: 2px solid #a5a4a4;
+    height: 500px;
+}
+
+.tarjeta_servicio:not(:last-child){
+    border-right: 2px solid #a5a4a4;
+}
+
+.tarjeta_servicio p{
+    text-align: justify;
+    margin-bottom: 30px;
+}
+
+.tarjeta_servicio img{
+    width: 400px;
+    height: 200px;
+    border-radius: 5px;
+    box-shadow: 1px 4px 3px rgba(0, 0, 0, 0.7);
+    margin: 20px 0px 20px 0px;
+}
+
+.tarjeta_servicio button{
+    width: 200px;
+    height: 50px;
+    border-radius: 20px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 25px;
+    background-color: var(--azul);
+    transition: 0.2s linear;
+}
+
+.tarjeta_servicio button:hover{
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.8);
+    transform: scale(1.1);
+}
+
+.contenedor_inflables .flecha{
+    width: 150px;
+    position: absolute;
+    top: 90%;
+    left: 80%;
+    filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.8));
+    transition: 0.4s linear;
+    cursor: pointer;
+}
+
+.forma_1{
+    width: 120px;
+    height: 120px;
+    border: 1px solid #a5a4a4;
+    background: linear-gradient(90deg, rgb(84, 4, 104) 0%, rgba(196,6,189,1) 35%, rgba(192,0,255,1) 100%);
+    border-radius: 15px 20px 30px 10px;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.8);
+    position: absolute;
+    top: 95%;
+    transform: rotate(60deg);
+}
+
+.forma_2{
+    width: 100px;
+    height: 100px;
+    border: 1px solid #a5a4a4;
+    background: linear-gradient(90deg, rgb(4, 6, 104) 0%, rgb(25, 6, 196) 35%, rgb(0, 102, 255) 100%);
+    border-radius: 50px;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.8);
+    position: absolute;
+    left: 10%;
+    top: 94%;
+    transform: rotate(200deg);
+}
+
+.flecha:hover{
+    transform: scale(1.1);
+}
+
+#flecha_2{
+    left: 10%;
+    transform: rotate(179deg);
+}
+
+/*Fin de la sección de los servicios de Inflables*/
+
+
