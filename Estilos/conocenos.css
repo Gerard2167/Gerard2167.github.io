@@ -1,9 +1,62 @@
+/*GENERALES*/
+
+
+/*Inicio de la sección del Banner*/
 .contendor_principal{
-    height: 1800px;
+    height: 1500px;
 }
 
-h1{
-    text-align: center;
-    margin-top: 150px;
-    color: var(--violet);
+.banner{
+    height: 500px;
 }
+
+.banner img{
+    margin-top: 90px;
+    width: 100%;
+    height: 400px;
+}
+
+/*Fin de la sección del Banner*/
+
+/*Inicio de la sección del Contenedor de la Información*/
+.contenedor_info{
+    position: relative;
+    background-image: url(/Imagenes/confeti.webp);
+}
+
+.contenedor_info h1{
+    color: var(--violet);
+    font-size: 100px;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.8);
+    filter: drop-shadow(1px 1px 4px #fff);
+    text-align: center;
+}
+
+.contenedor_info p{
+    padding: 40px;
+    text-align: justify;
+}
+
+.contenedor_info img{
+    margin-left: 30px;
+    width: 300px;
+    border-radius: 0px 10px 80px 40px;
+}
+
+.contenedor_info .operador{
+    margin-top: 60px;
+    margin-bottom: 30px;
+}
+
+.contenedor_info .somos_familia{
+    float: right;
+    margin-right: 30px;
+}
+
+.contenedor_info .parrafo_derecha{
+    position: absolute;
+    top: 58%;
+    left: 23%;
+}
+
+/*Fin de la sección del Contenedor de la Información*/

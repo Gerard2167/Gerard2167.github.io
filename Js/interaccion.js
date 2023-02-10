@@ -53,7 +53,7 @@ nav_prev.click(function(){
 
 
 
-
+//Animación de entrada para la información de la sección de servicios
 window.addEventListener("scroll", function(){
 //Asignación de variables
     //Variables de la sección Cotizar

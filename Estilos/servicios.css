@@ -32,8 +32,9 @@
 
 /*Inicio de la sección de los servicios*/
 .contendor_principal{
-    height: 1800px;
+    height: 1900px;
     position: relative;
+    background-image: url(/Imagenes/confeti.webp);
 }
 
 .contenedor_inflables{
@@ -64,7 +65,7 @@
     margin-right: 20px;
     padding: 10px;
     border-bottom: 2px solid #a5a4a4;
-    height: 500px;
+    height: 600px;
 }
 
 .tarjeta_servicio:not(:last-child){
@@ -78,7 +79,7 @@
 
 .tarjeta_servicio img{
     width: 400px;
-    height: 200px;
+    height: 300px;
     border-radius: 5px;
     box-shadow: 1px 4px 3px rgba(0, 0, 0, 0.7);
     margin: 20px 0px 20px 0px;
