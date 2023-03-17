@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sky Limit - Cotizar</title>
+  <link rel="stylesheet" href="/Estilos/estilos.css">
+  <link rel="stylesheet" href="/Estilos/cotizar.css">
+  <script src="/Js/cotizacion.js"></script>
+
+</head>
+<body>
+  <header>
+    <nav class="hmenu">
+      <input type="checkbox" id="check">
+      <label for="check" class="checkbtn">
+        <i class="fa-solid fa-bars"></i>
+      </label>
+      <a href="#" class="hlogo">
+        <img src="/Imagenes/logo.png" alt="Sky Limit" class="logo">
+      </a>
+      <ul>
+        <li><a href="/index.html">INICIO</a></li>
+        <li><a class="active" href="#">SERVICIOS</a></li>
+        <li><a href="/Paginas/conocenos.html">CONOCENOS</a></li>
+        <li><a href="/Paginas/contactanos.html">CONTACTANOS</a></li>
+      </ul>
+
+    </nav>
+  </header>
+  <div class="contenedor_principal">
+    <div class="segundo_contenedor">
+      <div class="banner">
+        <img src="/Imagenes/Coco.jpg" alt="">
+      </div>
+      <div class="cotizador">
+        <h1>Cotiza tu servicio</h1>
+        <div class="seleccion">
+          <form action="#" method="get">
+            <label for="servicio">Escoge tu Servicio o Paquete</label><br>
+            <select name="servicios" id="servicio">
+              <option value="castillo">Inflable El Castillo</option>
+              <option value="Coco">Inflable Coco El Cocodrilo</option>
+              <option value="magico">Inflable El Castillo Mágico</option>
+              <option value="tobogan">Inflable El Tobogan</option>
+            </select><br><br>
+            <label for="horas">Por cuantas horas</label><br>
+            <input type="number" id="horas"><br><br>
+            <label for="incluye">Tu servivio incluye: </label><br><br>
+            <label for="contenido" class="contenido">
+              <ul>
+                <li id="variable_servicio"></li>
+                <li>Traslado en la ciudad B/.15.00</li>
+              </ul>
+            </label><br><br><br>
+            <label for="otros">Elige servicios adicionales: </label><br><br>
+            <input type="checkbox" name="hora_Ex" value="Hora extra" id="hora_Ex">
+            <label for="hora_Ex">Hora Extra </label><br><br>
+            <div class="hora_extra_none">
+              <input type="radio" name="hora_num" id="hora_num" class="hora_num">
+              <label for="hora_num">1 hora</label>
+              <input type="radio" name="hora_num" id="hora_num2" class="hora_num2">
+              <label for="hora_num2">2 hora</label>
+              <input type="radio" name="hora_num" id="hora_num3" class="hora_num3">
+              <label for="hora_num3">3 hora</label><br><br>
+            </div>
+            <input type="checkbox" name="otros" value="Operador" id="operador">
+            <label for="operador">Operador</label>
+            <br><br><br>
+
+            <label for="precio" class="precio">Precio: </label>
+            <input type="text" name="precio" id="precio"><br><br><br>
+
+            <input type="submit" value="Enviar Cotización" class="enviar">
+          </form>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <section>
+      <h3>REDES</h3>
+      <div class="redes">
+        <div>
+          <a href="https://www.instagram.com/skylimit2708/"><img src="/Imagenes/logo Instagram.png" alt="Instagram"></a>
+          <a href="https://es-la.facebook.com/skylimit2708/"><img src="/Imagenes/Facebook_Logo_(2019).png" alt="Facebook"></a>
+        </div>
+        <p class="copy">Copyright © 2022 | Sky Limit</p>
+      </div>
+    </section>
+    <section>
+      <h3>ACCESOS DIRECTOS</h3>
+      <div class="accesos">
+        <a href="/Paginas/servicios.html">Servicios</a>
+        <a href="/Paginas/conocenos.html">Conocenos</a>
+        <a href="/Paginas/contactanos.html">Contactanos</a>
+      </div>
+    </section>
+    <section>
+      <h3>POLÍTICAS</h3>
+      <div class="politicas">
+        <a href="#">Política de Privacidad</a>
+        <a href="#">Política de Cookies</a>
+      </div>
+    </section>
+  </footer>
+  <script src="/Js/interaccion.js"></script>
+  <script src="js/app.js"></script>
+
+</body>
+</html>

@@ -14,20 +14,38 @@
 /* ESTILOS PARA CELULAR */
 @media (max-width: 858px) {
 
-    /* Hedear */
-    .checkbtn{
+    html, body{
+        max-width: 858px;
+        width: 100%;
+    }
+
+    /*Inicio Sección HEADER*/
+    header{
         display: block;
+        position: relative;
+        width: 100%;
+        height: 200px;
+    }
+
+    .checkbtn{
+        font-size: 500%;
+        display: inline-block;
+        transform: translate(-300%, 200%);
     }
 
     ul{
-        position: fixed;
+        position:fixed;
         width: 100%;
-        height: 100vh;
+        height: 100%;
         background: var(--azul);
         top: 80px;
         left: 100%;
         text-align: center;
         transition: all .5s;
+    }
+
+    nav ul{
+        margin: 0 auto;
     }
 
     nav ul li{
@@ -55,4 +73,248 @@
         z-index: 1000;
     }
 
+    /*Fin Sección HEADER*/
+
+    .imagenes_efecto img{
+        transform: translate(0, 0);
+    }
+
+    .contenedorPrincipal img{
+        width: 50px;
+        height: 50px;
+    }
+
+    /*Inicio Sección de Banners de Promociones*/
+
+    .contenedorPrincipal{
+        background-image: none;
+    }
+
+    .slider-container{
+        background-image: url(/Imagenes/confeti.webp);
+        background-repeat: no-repeat;
+        background-size: 100%;
+
+    }
+
+
+    .slider-items{
+
+    }
+    /*Fin Sección de Banners de Promociones*/
+
+    /*Inicio Sección de SERVICIOS*/
+    .servicios{
+        max-width: 858px;
+        width: 100%;
+        margin-top: 130px;
+    }
+
+    .cotizar{
+        display: block;
+    }
+
+    .cotizar-info{
+        padding: 0px;
+    }
+
+    .tit-servicios{
+        color: var(--violet);
+        font-size: 30px;
+        transform: translateY(100px);
+        visibility: visible;
+        transition: 0.9s;
+    }
+
+
+    .cotizar h3.slider_cotizar{
+        transform: translateY(0);
+        visibility: visible;
+        transition: 0.9s;
+    }
+
+    .cotizar-info p{
+        margin-top: 120px;
+        transform: translateX(0px);
+        visibility: visible;
+    }
+
+    .cotizar-info p.slider_p{
+        transform: translateX(0);
+        transition: 0.9s;
+        visibility: visible;
+    }
+
+    .cotizar-info button{
+        transform: translateX(0px);
+        transition: 0.10s;
+        visibility: visible;
+    }
+
+    .cotizar-info button.slider_btn{
+        transform: translateX(0);
+        transition: 0.9s;
+        visibility: visible;
+    }
+
+    /*Fin de sección Cotizar*/
+
+    /*Inicio de sección Inflables*/
+    .inflables{
+        display: block;
+    }
+    .inflables{
+        margin-top: 40px;
+    }
+
+    .inflables img{
+        margin-right: 20px;
+    }
+
+    .inflable_img1{
+        transform: translate(-10px, 55px);
+    }
+
+    .inflables_info{
+        padding-right: 200px;
+    }
+
+    .inflables h3.slider_inflable{
+        transform: translateY(0);
+        visibility: visible;
+        transition: 0.9s;
+    }
+
+    .inflables p{
+        margin-top: 20px;
+        transform: translateX(-300px);
+        transition: 0.10s;
+        visibility: hidden;
+    }
+
+    .inflables_info p.slider_p_inflable{
+        transform: translateX(0);
+        transition: 0.9s;
+        visibility: visible;
+    }
+
+    .inflables_info button{
+        transform: translateX(300px);
+        transition: 0.10s;
+        visibility: hidden;
+    }
+
+    .inflables_info button.slider_btn_inflable{
+        transform: translateX(0);
+        transition: 0.9s;
+        visibility: visible;
+    }
+
+
+        /*Fin de sección Cotizar*/
+
+        /*Inicio de sección Snack*/
+    .snack{
+        display: flex;
+    }
+
+    .snack_img1{
+        margin-left: 20px;
+        transform: translate(-10px,100px);
+    }
+
+    .snack_info{
+        margin-left: 20px;
+        padding: 10px;
+    }
+
+    .snack_info h3.slider_snack{
+        transform: translateY(0);
+        visibility: visible;
+        transition: 0.9s;
+    }
+
+    .snack_info p{
+        margin-top: 20px;
+        transform: translateX(300px);
+        transition: 0.10s;
+        visibility: hidden;
+    }
+
+    .snack_info p.slider_p_snack{
+        transform: translateX(0);
+        transition: 0.9s;
+        visibility: visible;
+    }
+
+    .snack_info button{
+        transform: translateX(-300px);
+        transition: 0.10s;
+        visibility: hidden;
+    }
+
+    .snack_info button.slider_btn_snack{
+        transform: translateX(0);
+        transition: 0.9s;
+        visibility: visible;
+    }
+    /*Fin de sección Snack*/
+
+    /*Inicio de sección Decoraciones*/
+    .decoraciones{
+        display: flex;
+    }
+
+    .decoraciones img{
+        margin-right: 20px;
+    }
+
+    .decor_img1{
+        transform: translate(40px, 55px);
+    }
+
+    .decoraciones_info{
+        padding: 20px;
+    }
+
+
+    .decoraciones_info h3.slider_decor{
+        transform: translateY(0);
+        visibility: visible;
+        transition: 0.9s;
+    }
+
+    .decoraciones_info p{
+        margin-top: 20px;
+        transform: translateX(-300px);
+        transition: 0.10s;
+        visibility: hidden;
+    }
+
+    .decoraciones_info p.slider_p_decor{
+        transform: translateX(0);
+        transition: 0.9s;
+        visibility: visible;
+    }
+
+    .decoraciones_info button{
+        transform: translateX(300px);
+        transition: 0.10s;
+        visibility: hidden;
+    }
+
+    .decoraciones_info button.slider_btn_decor{
+        transform: translateX(0);
+        transition: 0.9s;
+        visibility: visible;
+    }
+
+    /*Fin de sección Decoraciones*/
+    /*Fin Sección de SERVICIOS*/
+
+    /*Inicio Sección de NOSOTROS*/
+    .imagenes_efecto img{
+        transform: translate(0, 0);
+    }
+    /*Fin Sección de NOSOTROS*/
 }

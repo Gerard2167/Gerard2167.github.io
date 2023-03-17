@@ -323,10 +323,9 @@ header.abajo .hmenu ul li a{
     transition: 0.9s;
     visibility: visible;
 }
+/*Fin de sección Snack*/
 
-    /*Fin de sección Snack*/
-
-    /*Inicio de sección Decoraciones*/
+/*Inicio de sección Decoraciones*/
 .decoraciones{
     display: flex;
 }
@@ -375,7 +374,7 @@ header.abajo .hmenu ul li a{
     visibility: visible;
 }
 
-    /*Fin de sección Decoraciones*/
+/*Fin de sección Decoraciones*/
 
 /*Fin de la Sección Servicios*/
 

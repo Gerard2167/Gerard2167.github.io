@@ -1,0 +1,36 @@
+.pol_banner{
+    text-align: center;
+    height: 200px;
+    margin-top: 100px;
+    background-color: var(--azul);
+    color: #fff;
+}
+
+h1{
+    font-size: 60px;
+    line-height: 3;
+    font-weight: 700;
+}
+
+.contendor_principal{
+    padding: 30px 100px 100px 100px;
+    text-align: justify;
+    font-family: bitter, sans-serif;
+}
+
+li{
+    list-style:inside;
+}
+
+h2{
+    color: var(--azul);
+}
+
+p, li{
+    color: gray;
+}
+
+.copy{
+    color: #fff;
+}
+
