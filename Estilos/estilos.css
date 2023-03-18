@@ -88,6 +88,7 @@ li a.active, li a:hover{
     margin-right: 40px;
     cursor: pointer;
     display: none;
+    transition: 0.7s ease;
 }
 
 #check{
@@ -110,6 +111,10 @@ header.abajo .logo{
     width: 60px;
     height: 60px;
     margin-left: 30px;
+}
+
+header.abajo .checkbtn{
+    font-size: 30px;
 }
 
 header.abajo ul{
@@ -304,6 +309,7 @@ header.abajo .hmenu ul li a{
     transform: translateX(300px);
     transition: 0.10s;
     visibility: hidden;
+
 }
 
 .snack_info p.slider_p_snack{
@@ -421,10 +427,11 @@ header.abajo .hmenu ul li a{
     transform: translate(500px, -100px);
 }
 
-.nosotros_info h3{
+.nosotros h3{
     margin-bottom: 30px;
     color: var(--violet);
     font-size: 40px;
+    float: left;
 }
 /*Fin de la Sección de Nosotros*/
 
