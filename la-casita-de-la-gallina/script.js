@@ -1,6 +1,5 @@
-
 // Reemplaza este número con el WhatsApp real, incluyendo el código de país (Panamá: 507).
-const WHATSAPP_NUMBER = "50760000000";
+const WHATSAPP_NUMBER = "50762884868";
 const MESSAGE = "Hola, conocí La Casita de la Gallina al escanear el QR de mi bandeja. Quisiera más información sobre el Club La Casita.";
 
 document.querySelectorAll(".whatsapp-link").forEach((link) => {
